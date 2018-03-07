@@ -4,9 +4,6 @@ import './App.css';
 import Counter from './Counter';
 
 class App extends Component {
-  state = { value: 0 }
-
-
   render() {
     return (
       <div className="App">
@@ -15,13 +12,10 @@ class App extends Component {
           <h1 className="App-title">Counter Example</h1>
         </header>
         <div>
-          <p>{this.state.value}</p>
-          <Counter/>
-          <Counter/>
-          <Counter/>
-          <Counter/>
-          <Counter/>
-          <Counter/>
+          <Counter name='red' />
+          <Counter name='green'/>
+          <Counter name='blue'/>
+          <Counter name='yellow'/>
         </div>
       </div>
     );
